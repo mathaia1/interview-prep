@@ -1,22 +1,10 @@
 public class Main{
     public static void main (String[] args){
 
-        for (int i = 0; i<=500; i++){
-            System.out.println((byte) i);
-        }
-       // BankAccount acct = new SavingsAccount(100,25);
-        //System.out.println("Withdraw 90 succeeded?" + acct.withdraw(90)); //Won,t succeed as min balance is 25
-       // System.out.println("Balance: " + acct.getBalance()); //100
-        //System.out.println("Withdraw 50 succeeded?" + acct.withdraw(50)); //Yes
-        //System.out.println("Balance: " + acct.getBalance()); // 50
-
-
-
-        //Payable[] bills = { new CarLoan(12000, 48), new Subscription(15.99) };
-        //double total = 0;
-        //for (Payable bill : bills) {
-         //   total += bill.getMonthlyPayment();
-        //}
-        //System.out.println("Total monthly: " + total);
+        GradeCalculator student1 = new GradeCalculator("John", 85, 90, 82);
+        GradeCalculator student2 = new GradeCalculator("Sarah", 95, 92, 88);
+        System.out.println(student1.studentName + ": Average " + student1.calculateAverage() + ", Grade " + student1.getGrade());
+        System.out.println(student2.studentName + ": Average " + student2.calculateAverage() + ", Grade " + student2.getGrade());
+        
     }
 }
